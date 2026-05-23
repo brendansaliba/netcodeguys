@@ -130,6 +130,19 @@ a {
   aspect-ratio: 579 / 253;
 }
 
+.tweet-feature {
+  display: grid;
+  place-items: center;
+  padding: 12px;
+  overflow: hidden;
+  background: #101010;
+}
+
+.tweet-feature .twitter-tweet {
+  max-width: 520px;
+  min-height: 0;
+}
+
 .hero-copy {
   padding-top: 0;
 }
@@ -242,6 +255,12 @@ a {
   padding: 0 18px;
 }
 
+.wide-wrap {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
 .testimonials {
   min-height: 173px;
   padding-top: 35px;
@@ -277,6 +296,42 @@ a {
 
 .premium-preview {
   padding: 22px 0 70px;
+}
+
+.tweet-section {
+  padding: 0 0 28px;
+  background: var(--page);
+}
+
+.tweet-section h2 {
+  margin: 0 0 14px;
+  font-size: 19px;
+  line-height: 1.2;
+}
+
+.tweet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  align-items: start;
+}
+
+.twitter-tweet {
+  width: 100%;
+  min-height: 170px;
+  margin: 0 !important;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  color: #169dd0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.twitter-tweet a {
+  color: #169dd0;
+  font-weight: 800;
 }
 
 .premium-grid {
@@ -476,7 +531,8 @@ a {
   }
 
   .hero-content,
-  .premium-grid {
+  .premium-grid,
+  .tweet-grid {
     grid-template-columns: 1fr;
   }
 
