@@ -602,3 +602,188 @@ a {
     justify-content: center;
   }
 }
+
+.forum-page {
+  background:
+    linear-gradient(rgba(238, 238, 238, 0.94), rgba(238, 238, 238, 0.94)),
+    url("assets/csgo-background.jpg") center top / 900px auto;
+}
+
+.forum-shell {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  padding: 24px 18px 46px;
+}
+
+.forum-masthead {
+  border: 1px solid #cfcfcf;
+  background: #f8f8f8;
+  box-shadow: inset 0 1px 0 #fff;
+  padding: 16px 18px;
+}
+
+.forum-crumbs {
+  margin: 0 0 10px;
+  color: #666;
+  font-size: 11px;
+}
+
+.forum-crumbs a,
+.forum-board a,
+.thread-card a {
+  color: #078ebe;
+}
+
+.forum-masthead h1 {
+  margin: 0 0 7px;
+  font-size: 25px;
+  line-height: 1.1;
+}
+
+.forum-masthead p:last-child {
+  max-width: 760px;
+  margin: 0;
+  color: #333;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.forum-notice {
+  margin: 14px 0;
+  padding: 10px 12px;
+  color: #262626;
+  background: #fff8cf;
+  border: 1px solid #d6c66d;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.forum-board {
+  border: 1px solid #b8b8b8;
+  background: #fff;
+}
+
+.forum-titlebar,
+.forum-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 78px 78px 190px;
+  align-items: stretch;
+}
+
+.forum-titlebar {
+  color: #fff;
+  background: linear-gradient(#1a1a1a, #020202);
+  border-bottom: 1px solid #000;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.forum-titlebar span,
+.forum-row > span {
+  padding: 9px 10px;
+  border-right: 1px solid #d4d4d4;
+}
+
+.forum-titlebar span:last-child,
+.forum-row > span:last-child {
+  border-right: 0;
+}
+
+.forum-row {
+  color: #252525;
+  text-decoration: none;
+  background: #f2f2f2;
+  border-bottom: 1px solid #d4d4d4;
+  font-size: 12px;
+}
+
+.forum-row:nth-child(odd) {
+  background: #fafafa;
+}
+
+.forum-row:hover {
+  background: #e6f5fb;
+}
+
+.forum-row.sticky {
+  background: #e9f7fc;
+}
+
+.forum-row strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #078ebe;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.forum-row em {
+  display: block;
+  color: #666;
+  font-style: normal;
+  line-height: 1.3;
+}
+
+.thread-list {
+  margin-top: 22px;
+}
+
+.thread-list h2 {
+  margin: 0;
+  padding: 8px 10px;
+  color: #fff;
+  background: #111;
+  border: 1px solid #000;
+  font-size: 16px;
+}
+
+.thread-card {
+  padding: 13px 14px;
+  border: 1px solid #c9c9c9;
+  border-top: 0;
+  background: #f7f7f7;
+}
+
+.thread-card:nth-child(odd) {
+  background: #fff;
+}
+
+.thread-card h3 {
+  margin: 0 0 4px;
+  color: #078ebe;
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.thread-card header p {
+  margin: 0 0 10px;
+  color: #777;
+  font-size: 11px;
+}
+
+.thread-card > p {
+  margin: 0;
+  color: #222;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+@media (max-width: 760px) {
+  .forum-titlebar {
+    display: none;
+  }
+
+  .forum-row {
+    grid-template-columns: 1fr;
+  }
+
+  .forum-row > span {
+    border-right: 0;
+  }
+
+  .forum-row > span:not(:first-child) {
+    padding-top: 0;
+    color: #666;
+  }
+}
