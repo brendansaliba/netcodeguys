@@ -84,6 +84,41 @@ main {
   text-decoration: none;
 }
 
+.newsflash {
+  overflow: hidden;
+  width: 100%;
+  background: #c90000;
+  border-bottom: 2px solid #850000;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.newsflash-track {
+  display: flex;
+  width: max-content;
+  animation: newsflash-scroll 22s linear infinite;
+  will-change: transform;
+}
+
+.newsflash-track span {
+  flex: 0 0 auto;
+  padding: 8px 36px;
+}
+
+@keyframes newsflash-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .hero {
   position: relative;
   min-height: 321px;
